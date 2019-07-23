@@ -20,7 +20,11 @@
         android:id="@+id/loginFragment"
         android:name="com.inplayer.android.view.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
     <fragment
         android:id="@+id/paymentFragment"
         android:name="com.inplayer.android.view.PaymentFragment"
